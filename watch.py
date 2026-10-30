@@ -7,8 +7,8 @@ import urllib.parse
 import urllib.request
 
 EVENT_IDS = os.environ.get("EVENT_IDS", "527").split(",")
-TOKEN = os.environ["TG_TOKEN"]  # from @BotFather
-CHAT_ID = os.environ["TG_CHAT_ID"]  # your chat id with the bot
+TOKEN = "9062101411:AAEGQW634hhCJEw2u34oZt7asuqRylt1G6k"
+CHAT_ID = "9009807387"
 STATE = pathlib.Path("state.json")
 API = "https://salamirari.com/wp-admin/admin-ajax.php?action=wpamelia_api&call=/events&page=1&id[]={}"
 
