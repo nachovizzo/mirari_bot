@@ -14,8 +14,8 @@ jobs:
       - run: python watch.py
         env:
           EVENT_IDS: "527"
-          WA_PHONE: ${{ secrets.WA_PHONE }}
-          WA_APIKEY: ${{ secrets.WA_APIKEY }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
       - name: Save last count
         run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
